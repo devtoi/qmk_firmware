@@ -43,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 500
 #define PERMISSIVE_HOLD
 
-#define SERIAL_USART_TX_PIN GP0
+#define SERIAL_USART_TX_PIN GP1
 #define SERIAL_PIO_USE_PIO1
 
 /* Top
