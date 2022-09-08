@@ -74,7 +74,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *	├───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┤
 *	│Back	│	!	│	-	│	+	│	=	│		│			│	|	│	(	│	)	│	:	│	/	│Forward│
 *	├───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┤
-*	│		│	'	│	/	│	*	│	#	│		│			│	%	│	[	│	]	│	~	│		│	?	│
+*	│		│	"	│	/	│	*	│	#	│		│			│	%	│	[	│	]	│	~	│	`	│	?	│
 *	└───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┘
 *			│		│		│		│		│		│			│		│		│		│		│		│
 *			└───────┴───────┴───────┴───────┴───────┘			└───────┴───────┴───────┴───────┴───────┘
@@ -83,12 +83,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Left hand
 		_______, 	KC_CIRC,	KC_LABK,	KC_RABK,	KC_PERC,	_______,		
 		KC_WBAK, 	KC_EXLM,	KC_MINS,	KC_PLUS,	KC_EQL,		_______,		
-		_______,	KC_QUOT,	KC_SLSH,	KC_ASTR,	KC_HASH,	_______,		
+		_______,	KC_DQUO,	KC_SLSH,	KC_ASTR,	KC_HASH,	_______,
 		_______,	_______,	_______,	_______,	_______,	_______,	
 // Right hand
 		KC_AMPR, 	KC_LCBR,	KC_RCBR,	KC_AT,		KC_DLR,		_______,
 		KC_PIPE, 	KC_LPRN,	KC_RPRN,	KC_COLN,	KC_SLSH,	KC_WFWD,
-		KC_PERC,	KC_LBRC,	KC_RBRC,	KC_TILD,	_______,	KC_QUES,
+		KC_PERC,	KC_LBRC,	KC_RBRC,	KC_TILD,	KC_GRV,		KC_QUES,
 		_______,	_______,	_______,	_______,	_______,	KC_DEL
 	),
 /*	Numbers and F keys
