@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *	├───────┼───────┬───────┬───────┬───────┬───────┐			┌───────┬───────┬───────┬───────┬───────┼───────┤
 *	│		│	Q	│	W	│	E	│	R	│	T	│			│	Y	│	U	│	I	│	O	│	P	│		│
 *	├───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┤
-*	│		│	gA	│	aS	│	cD	│	F	│	G	│			│	H	│	J	│	cK	│	aL	│	g;	│		│
+*	│		│	gA	│	aS	│	cD	│	sF	│	G	│			│	H	│	sJ	│	cK	│	aL	│	g;	│		│
 *	├───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┤
 *	│		│	Z	│	X	│	C	│	V	│	B	│			│	N	│	M	│	,	│	.	│	/	│		│
 *	└───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┘
@@ -33,12 +33,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_QWERTY] = LAYOUT_r24spico_36key(
 // Left hand
 		KC_Q,			KC_W,			KC_E,			KC_R,			KC_T,		
-		LGUI_T(KC_A),	LALT_T(KC_S),	LCTL_T(KC_D),	KC_F,			KC_G,		
+		LGUI_T(KC_A),	LALT_T(KC_S),	LCTL_T(KC_D),	LSFT_T(KC_F),	KC_G,		
 		KC_Z,			KC_X,			KC_C,			KC_V,			KC_B,		
-		XXXXXXX,		OSM(KC_LSFT), 	LT(SYM, KC_BSPC),LT(NUF,KC_ESC),XXXXXXX,	
+		XXXXXXX,		OSM(MOD_LSFT), 	LT(SYM, KC_BSPC),LT(NUF,KC_ESC),XXXXXXX,	
 // Right hand
 		KC_Y, 			KC_U,			KC_I,			KC_O,			KC_P,
-		KC_H, 			KC_J,			RCTL_T(KC_K),	RALT_T(KC_L),	RGUI_T(KC_SCLN),
+		KC_H, 			LSFT_T(KC_J),	RCTL_T(KC_K),	RALT_T(KC_L),	RGUI_T(KC_SCLN),
 		KC_N,			KC_M,			KC_COMM,		KC_DOT,			KC_SLSH,
 		XXXXXXX,		LT(MUS, KC_TAB),LT(NUF, KC_SPC),LT(MOD, KC_ENT),XXXXXXX
 	),
@@ -49,7 +49,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 *	├───────┼───────┬───────┬───────┬───────┬───────┐			┌───────┬───────┬───────┬───────┬───────┼───────┤
 *	│		│   ;	│	,	│	.	│	P	│	Y	│			│	F	│	G	│	C	│	R	│	L	│		│
 *	├───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┤
-*	│		│ 	gA	│	aO	│	cE	│	U	│	I	│			│	D	│	H	│	cT	│	aN	│	gS	│		│
+*	│		│ 	gA	│	aO	│	cE	│	sU	│	I	│			│	D	│	sH	│	cT	│	aN	│	gS	│		│
 *	├───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┤
 *	│		│  	'	│	Q	│	J	│	K	│	X	│			│	B	│	M	│	W	│	V	│	Z	│		│
 *	└───────┼───────┼───────┼───────┼───────┼───────┤			├───────┼───────┼───────┼───────┼───────┼───────┘
@@ -60,12 +60,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_DVORAK] = LAYOUT_r24spico_36key(
 // Left hand
 		KC_SCLN,		KC_COMM,		KC_DOT,			KC_P,			KC_Y,		
-		LGUI_T(KC_A),	LALT_T(KC_O),	LCTL_T(KC_E),	KC_U,			KC_I,		
+		LGUI_T(KC_A),	LALT_T(KC_O),	LCTL_T(KC_E),	LSFT_T(KC_U),	KC_I,		
 		KC_QUOT,		KC_Q,			KC_J,			KC_K,			KC_X,		
 		_______,		_______,		_______,		_______,		_______,	
 // Right hand
 		KC_F, 		KC_G,			KC_C,			KC_R,			KC_L,
-		KC_D, 		KC_H,			RCTL_T(KC_T),	RALT_T(KC_N),	RGUI_T(KC_S),
+		KC_D, 		LSFT_T(KC_H),	RCTL_T(KC_T),	RALT_T(KC_N),	RGUI_T(KC_S),
 		KC_B,		KC_M,			KC_W,			KC_V,			KC_Z,
 		_______,	_______,		_______,		_______,		_______		
 	),
